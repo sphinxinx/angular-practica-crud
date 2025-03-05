@@ -4,11 +4,8 @@ import { ButtonStyleDirective } from '../../shared/button-style.directive';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonStyleDirective],
+  imports: [ButtonStyleDirective, CrudTableComponentComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
-export class HomeComponent {
-  
-  
-}
+export class HomeComponent {}

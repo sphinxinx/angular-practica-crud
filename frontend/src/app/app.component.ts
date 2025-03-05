@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ButtonStyleDirective } from './shared/button-style.directive';
+import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonStyleDirective],
+  imports: [RouterOutlet, RouterLinkWithHref],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  
-  
-}
+export class AppComponent {}
