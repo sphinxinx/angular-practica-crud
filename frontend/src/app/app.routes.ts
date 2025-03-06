@@ -5,6 +5,7 @@ import { CreateComponent } from './shared/components/create/create.component';
 import { DetailComponent } from './shared/components/detail/detail.component';
 import { EditComponent } from './shared/components/edit/edit.component';
 import { DeleteComponent } from './shared/components/delete/delete.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
 

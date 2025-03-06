@@ -1,8 +1,9 @@
-<!-- Botón con estilo primario -->
-<button [appButtonStyle]="'primary'">Botón Primario</button>
+<router-outlet></router-outlet>
+<header>
+  <ul>
+    <li><button [appButtonStyle]="'primary'" routerLink="/home">home</button></li>
+    <li><button [appButtonStyle]="'primary'" routerLink="/test">test</button></li>
+  </ul>
+</header>
 
-<!-- Botón con estilo secundario -->
-<button [appButtonStyle]="'secondary'">Botón Secundario</button>
-
-<!-- Botón de estilo peligroso -->
-<button [appButtonStyle]="'danger'">Botón de Peligro</button>
+<app-crud-table-component></app-crud-table-component>
