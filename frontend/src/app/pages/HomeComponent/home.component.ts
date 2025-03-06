@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ButtonStyleDirective } from '../../shared/button-style.directive';
+import { CrudTableComponentComponent } from '../../shared/crud-table-component/crud-table-component.component';
 
 @Component({
   selector: 'app-home',
