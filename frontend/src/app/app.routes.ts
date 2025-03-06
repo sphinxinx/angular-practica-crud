@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/HomeComponent/home.component';
+<<<<<<< HEAD
 import { CrudTableComponentComponent } from './shared/components/crud-table-component/crud-table-component.component';
 import { CreateComponent } from './shared/components/create/create.component';
 import { DetailComponent } from './shared/components/detail/detail.component';
@@ -17,4 +18,11 @@ export const routes: Routes = [
 
 
 
+=======
+import { ButtonStyleDirective } from './shared/button-style.directive';
+
+export const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'test', component: ButtonStyleDirective },
+>>>>>>> origin/main
 ];
