@@ -5,17 +5,14 @@ import { CreateComponent } from './shared/components/create/create.component';
 import { DetailComponent } from './shared/components/detail/detail.component';
 import { EditComponent } from './shared/components/edit/edit.component';
 import { DeleteComponent } from './shared/components/delete/delete.component';
-import { AppComponent } from './app.component';
+import { PruebaComponent } from './pages/prueba/prueba.component';
 
 export const routes: Routes = [
-
-    {path: 'home', component: HomeComponent},
-    {path: 'crud', component: CrudTableComponentComponent},
-    {path: 'create', component: CreateComponent},
-    {path: 'detail/:id', component: DetailComponent},
-    {path: 'edit/:id', component: EditComponent},
-    {path: 'delete/:id', component: DeleteComponent},
-
-
-
+  { path: '', component: HomeComponent },
+  { path: 'crud', component: CrudTableComponentComponent },
+  { path: 'create', component: CreateComponent },
+  { path: 'detail/:id', component: DetailComponent },
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'delete/:id', component: DeleteComponent },
+  { path: 'prueba', component: PruebaComponent },
 ];

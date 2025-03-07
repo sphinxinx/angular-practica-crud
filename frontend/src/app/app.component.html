@@ -1,1 +1,11 @@
-<app-home></app-home>
+<header>
+  <ul>
+    <li>
+      <button [appButtonStyle]="'primary'" routerLink="/">home</button>
+    </li>
+    <li>
+      <button [appButtonStyle]="'primary'" routerLink="/prueba">test</button>
+    </li>
+  </ul>
+</header>
+<router-outlet></router-outlet>
