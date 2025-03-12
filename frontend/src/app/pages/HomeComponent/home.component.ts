@@ -6,7 +6,7 @@ import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonStyleDirective, CrudTableComponentComponent,RouterOutlet, RouterLinkWithHref],
+  imports: [CrudTableComponentComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
