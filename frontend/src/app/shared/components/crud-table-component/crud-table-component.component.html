@@ -1,1 +1,23 @@
-<p>esto funciona</p>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles()">
+            <td><a [routerLink]="['/detail', vehicle.id]">{{ vehicle.id }}</a></td>
+            <td>{{ vehicle.marca }}</td>
+            <td>{{ vehicle.modelo }}</td>
+            <td>{{ vehicle.total }}</td>
+            <td class="actions">
+                <button [appButtonStyle]="'primary'" [routerLink]="['/edit', vehicle.id]">Editar</button>
+                <button [appButtonStyle]="'danger'">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
